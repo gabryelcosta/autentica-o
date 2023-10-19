@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.nav`
   width: 100%;
 
-  display: flex;  
+  display: flex;
   max-width: 632px;
   margin-bottom: 64px;
 
@@ -21,10 +21,10 @@ export const Container = styled.nav`
     align-items: center;
 
     &::after {
-        content:""; 
-        height: 24px; 
+        content:"";
+        height: 24px;
         width: 1px;
-        background-color: ${({ theme }) => theme.COLORS.GRAY_600};        
+        background-color: ${({ theme }) => theme.COLORS.GRAY_600};
         margin:0 16px;
     }
   }
@@ -40,6 +40,10 @@ export const User = styled.div`
     align-items: flex-end;
     justify-content: center;
 
+    strong {
+      text-transform: capitalize;
+    }
+
     > small {
         color: ${({ theme }) => theme.COLORS.GRAY_600};
         font-size: 14px;
@@ -47,6 +51,10 @@ export const User = styled.div`
         display: flex;
         align-items: center;
         margin-top: 3px;
+
+        > span {
+          text-transform: capitalize;
+        }
 
         > svg {
             margin-right: 5px;
